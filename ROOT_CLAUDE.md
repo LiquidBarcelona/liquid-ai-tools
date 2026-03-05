@@ -4,7 +4,6 @@
 
 - Break down features into **small, testable iterations**
 - Test each step before moving forward
-- Avoid ambitious multi-change approaches that can break everything
 
 ## Backend Development (TDD Approach)
 1. Write a **simple test** first
@@ -34,8 +33,7 @@
 
 ## Output
 When finishing a task, provide a **short summary** similar to a concise git commit message.
-Avoid long explanations or recaps of things we've already discussed or iterated on.
 
 ## Writing Style
 
-Clear and professional. No generic AI expressions, no grandiose language, no prefabricated phrases. No emojis. In reports, skip formulaic sections like "Executive Summary" or redundant conclusions.
+Precise and natural wording. No generic AI expressions, no grandiose language, no prefabricated phrases. No emojis. In reports, skip formulaic sections like "Executive Summary" or redundant conclusions.
