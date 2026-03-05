@@ -1,9 +1,5 @@
 # Development Philosophy
 
-## Environment
-
-Multi-project workspace (~100+ projects). Primary stack: Laravel/PHP, Craft CMS, Vue.js. Each project lives in its own directory with its own `CLAUDE.md`.
-
 ## Divide and Conquer: Iterative Development
 
 - Break down features into **small, testable iterations**
@@ -25,10 +21,7 @@ Multi-project workspace (~100+ projects). Primary stack: Laravel/PHP, Craft CMS,
 - Start minimal: something that works and looks decent
 - Iterate and improve the interface gradually
 - **Follow existing HTML patterns** in the project
-
-## HTML
-Follow POSH principles. Prefer native semantics over ARIA patches.
-Apply Rule of Least Power: HTML first, CSS second, JS last.
+- Prefer native semantics over ARIA patches. HTML first, CSS second, JS last.
 
 ## Verification
 - Backend changes: run the relevant test suite before considering a task done.
