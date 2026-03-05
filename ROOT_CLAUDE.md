@@ -1,30 +1,47 @@
-# Global Instructions
+# Development Philosophy
 
 ## Environment
 
 Multi-project workspace (~100+ projects). Primary stack: Laravel/PHP, Craft CMS, Vue.js. Each project lives in its own directory with its own `CLAUDE.md`.
 
-## How I Work
+## Divide and Conquer: Iterative Development
 
-- Break features into small, testable iterations. Test each step before moving forward.
-- Backend: write a simple test first, implement minimal code to pass it, verify before continuing.
-- Frontend: no unit tests for UI. Start minimal, iterate gradually. Follow existing HTML patterns in the project.
-- HTML: prefer native semantics over ARIA patches. HTML first, CSS second, JS last.
+- Break down features into **small, testable iterations**
+- Test each step before moving forward
+- Avoid ambitious multi-change approaches that can break everything
+
+## Backend Development (TDD Approach)
+1. Write a **simple test** first
+2. Implement the minimal code to pass it
+3. Verify it works before continuing
+
+### Test Guidelines
+- Keep tests simple and focused
+- Check what matters (e.g., status code 400)
+- Skip unnecessary assertions (e.g., exact error message text)
+
+## Frontend Development (HTML/CSS)
+- **No unit testing required** for UI
+- Start minimal: something that works and looks decent
+- Iterate and improve the interface gradually
+- **Follow existing HTML patterns** in the project
+
+## HTML
+Follow POSH principles. Prefer native semantics over ARIA patches.
+Apply Rule of Least Power: HTML first, CSS second, JS last.
 
 ## Verification
-
 - Backend changes: run the relevant test suite before considering a task done.
 - Frontend changes: verify the page renders correctly.
 - Always check for regressions in related functionality.
 
 ## Coding Standards
-
 - Laravel/PHP projects: read `~/.claude/laravel-php-guidelines.md` first.
 - Deploy scripts and server tasks: follow `~/.claude/sysadmin-guidelines.md`.
 
 ## Output
-
-When finishing a task, provide a short summary similar to a concise git commit message. No long recaps.
+When finishing a task, provide a **short summary** similar to a concise git commit message.
+Avoid long explanations or recaps of things we've already discussed or iterated on.
 
 ## Writing Style
 
