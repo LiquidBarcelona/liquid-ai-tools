@@ -1,36 +1,31 @@
-# Development Philosophy
+# Global Instructions
 
-## Divide and Conquer: Iterative Development
+## Environment
 
-- Break down features into **small, testable iterations**
-- Test each step before moving forward
-- Avoid ambitious multi-change approaches that can break everything
-- Build small, reusable functions that work perfectly
+Multi-project workspace (~100+ projects). Primary stack: Laravel/PHP, Craft CMS, Vue.js. Each project lives in its own directory with its own `CLAUDE.md`.
 
-## Backend Development (TDD Approach)
-1. Write a **simple test** first
-2. Implement the minimal code to pass it
-3. Verify it works before continuing
+## How I Work
 
-### Test Guidelines
-- Keep tests simple and focused
-- Check what matters (e.g., status code 400)
-- Skip unnecessary assertions (e.g., exact error message text)
+- Break features into small, testable iterations. Test each step before moving forward.
+- Backend: write a simple test first, implement minimal code to pass it, verify before continuing.
+- Frontend: no unit tests for UI. Start minimal, iterate gradually. Follow existing HTML patterns in the project.
+- HTML: prefer native semantics over ARIA patches. HTML first, CSS second, JS last.
 
-## Frontend Development (HTML/CSS)
-- **No unit testing required** for UI
-- Start minimal: something that works and looks decent
-- Iterate and improve the interface gradually
-- **Follow existing HTML patterns** in the project
-- Keep it simple, avoid over-engineering from the start
+## Verification
+
+- Backend changes: run the relevant test suite before considering a task done.
+- Frontend changes: verify the page renders correctly.
+- Always check for regressions in related functionality.
 
 ## Coding Standards
-When working with Laravel/PHP projects, first read the coding guidelines at @~/.claude/laravel-php-guidelines.md
+
+- Laravel/PHP projects: read `~/.claude/laravel-php-guidelines.md` first.
+- Deploy scripts and server tasks: follow `~/.claude/sysadmin-guidelines.md`.
 
 ## Output
-When finishing a task, provide a **short summary** similar to a concise git commit message.
-Avoid long explanations or recaps of things we've already discussed or iterated on.
+
+When finishing a task, provide a short summary similar to a concise git commit message. No long recaps.
 
 ## Writing Style
 
-Maintain a clear and professional style without relying on generic, grandiose, or AI-like expressions. Prioritize precise and natural wording, avoid exaggerations or prefabricated phrases, and steer clear of any language that might feel artificial or repetitive. When writing reports, avoid titles such as “Executive Summary,” redundant conclusions, or other formulaic sections. Also avoid unnecessary emoticons or emojis.
+Clear and professional. No generic AI expressions, no grandiose language, no prefabricated phrases. No emojis. In reports, skip formulaic sections like "Executive Summary" or redundant conclusions.
